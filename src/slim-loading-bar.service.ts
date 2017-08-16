@@ -102,7 +102,7 @@ export class SlimLoadingBarService {
         // Run the timer with milliseconds iterval
         this._intervalCounterId = setInterval(() => {
             // Increment the progress and update view component
-            this.progress++;
+            this.progress=this.progress+10;
             // If the progress is 100% - call complete
             if (this.progress === 100) {
                 this.complete();
